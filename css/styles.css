@@ -83,6 +83,41 @@ address {
   width: 1200px;
 }
 
+/* Social icons */
+
+.social-icons .icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-icons {
+  display: inline-flex;
+}
+
+.social-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-icons-link:hover,
+.social-icons-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-icons-link:hover .icon,
+.social-icons-link:focus .icon {
+  fill: #fff;
+}
+
+.social-icons-item + .social-icons-item {
+  margin-left: 10px;
+}
+
 /*Header*/
 
 .container .header-nav {
