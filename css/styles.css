@@ -145,6 +145,26 @@ address {
   color: var(--main-text-color);
 }
 
+.cont-nav .icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--main-text-color);
+}
+
+.cont-link:hover .icon,
+.cont-link:focus .icon {
+  fill: var(--accent-color);
+}
+
+.cont-link {
+  display: flex;
+  align-items: center;
+}
+
+.cont-link .icon {
+  margin-right: 10px;
+}
+
 .pages-nav,
 .cont-nav {
   display: flex;
@@ -165,7 +185,6 @@ address {
 
 .pages-nav .link,
 .cont-nav .link {
-  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
