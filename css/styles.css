@@ -146,8 +146,6 @@ address {
 }
 
 .cont-nav .icon {
-  width: 24px;
-  height: 24px;
   fill: var(--main-text-color);
 }
 
@@ -194,12 +192,8 @@ address {
   background-color: #fff;
 }
 
-.header-text:hover,
-.header-text:focus,
-.footer-address:hover,
-.footer-address:focus,
-.footer-contacts:hover,
-.footer-contacts:focus {
+.cont-link:hover,
+.cont-link:focus {
   color: var(--accent-color);
 }
 
@@ -520,8 +514,8 @@ button:focus {
   box-sizing: border-box;
 }
 
-.pro-link:hover .pro-name,
-.pro-link:focus .pro-name {
+.pro-item:hover,
+.pro-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -579,8 +573,9 @@ button:focus {
 }
 
 .footer-socials {
-  flex-basis: calc((100% - 30px * 2) / 3);
+  flex-basis: calc((100% - 30px * 2) / 4);
   margin-left: 30px;
+  margin-top: 12px;
 }
 
 .footer-socials-title {
@@ -616,7 +611,10 @@ button:focus {
   background-color: var(--accent-color);
 }
 
-.socials-items + .socials-items {
-  margin-left: 10px;
+.socials-items {
   margin-top: 20px;
+}
+
+.socials-items:not(:first-child) {
+  margin-left: 10px;
 }
