@@ -146,12 +146,7 @@ address {
 }
 
 .cont-nav .icon {
-  fill: var(--main-text-color);
-}
-
-.cont-link:hover .icon,
-.cont-link:focus .icon {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 .cont-link {
